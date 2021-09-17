@@ -35,6 +35,8 @@ print(box_4)
 
 print('5.1: The line of code below is commented out because it produces many SyntaxErrors. Fix the problem and turn the comment back into regular Python code')
 completion_message = 'Completed_the_first_Python_challenge'
+
 print(completion_message)
+
 print('5.2: Turn the comment below back into regular Python code')
 print(completion_message)

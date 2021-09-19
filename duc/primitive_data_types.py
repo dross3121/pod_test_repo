@@ -1,3 +1,5 @@
+# PRIMITIVE DATA TYPE LECTURE NOTES
+
 # '''
 # Strings - text/character data
 # Integer - numeric, no decimal
@@ -144,3 +146,4 @@ print(float(False))
 
 print(str(False))
 print(type(str(False)))
+

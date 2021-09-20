@@ -2,7 +2,7 @@ print('1: Describe what is happening below by adding comments before each line')
 box_1 = 'books'
 box_2 = 'clothes'
 box_3 = 'plants'
-box_4 = 'kitchen stuff'
+box_4 = 'kitchen stuff always'
 
 print('2: Print the variables box_1, box_2, box_3, box_4')
 

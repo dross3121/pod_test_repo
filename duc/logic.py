@@ -7,7 +7,7 @@
 
 # print(a == b)
 
-# COMPARISION OPERTATOR / == :~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# COMPARISION OPERTATOR :~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # a = 0
 # b = 1
@@ -92,13 +92,60 @@
 #     print('well, nothing worked!')
 
 # A PRACTICAL EXAMPLE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-answer = input('Do you want to hear a joke? (press y/n)')
-# code responds accordingly
-if answer == "y":
-    print("I'm against picketing, but I don't know how to show it.")
-    # Mitch Hedberg (RIP)
-elif answer =="n":
-    print("Your Lost!")
-else:
-    print("I don't understand.")
+# answer = input('Do you want to hear a joke? (press y/n)')
+# # code responds accordingly
+# if answer == "y":
+#     print("I'm against picketing, but I don't know how to show it.")
+#     # Mitch Hedberg (RIP)
+# elif answer =="n":
+#     print("Your Lost!")
+# else:
+#     print("I don't understand.")
+
+# LOGIC LECTURE NOTES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# a='cat'
+# b='dog'
+# print(a==b)
+# COMPARISON OPERATORS:
+# <=, >=, ==, !=, <, >
+
+# or will always evaluate as a BOOLEAN
+# a=3
+# b=4
+# c=9
+
+# print(a<b and not b>c) 
+
+# print(a<b or c>b) #in an or statment, if one side evaluates 
+
+# and
+# print (a==b and c>b)
+
+# not
+# print(not 1>2)
+
+# my_wallet = 5
+# friend_wallet = 100
+# bagel_price = 7
+
+# if my_wallet>=bagel_price:
+#     print("Buying Bagel")
+# if friend_wallet>=bagel_price:
+#     print("Beg friend to buy bagel")
+# elif friend_wallet+my_wallet>=bagel_price:
+#     if(bagel_price>6):
+#         print("Complain to friend")
+# else:
+#     print("Complain about New York Prices")
+
+answer=input("Do you want to eat a bagel(press y/n)")
+assert(answer=='y')
+
+# if answer == 'y':
+#     print("Here you go")
+# elif answer == 'n':
+#     print("No bueno for you")
+# else:
+#     print("not a valid character!")
 

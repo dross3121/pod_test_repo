@@ -139,8 +139,7 @@
 # else:
 #     print("Complain about New York Prices")
 
-answer=input("Do you want to eat a bagel(press y/n)")
-assert(answer=='y')
+# answer=input("Do you want to eat a bagel(press y/n)")
 
 # if answer == 'y':
 #     print("Here you go")

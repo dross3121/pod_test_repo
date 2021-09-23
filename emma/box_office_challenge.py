@@ -29,7 +29,7 @@ print(len(remaining_50_list))
 
 # TODO: Great! Let's join the two lists into one list called "top_100".
 # Note: Print your new variable to see the combined list of movies
-top_100 = top_100 = remaining_50_list
+top_100 = top_100 + remaining_50_list
 print(top_100)
 
 # TODO: Let's print the first movie in our "top_100" list. Let's use the index lookup method to do this.

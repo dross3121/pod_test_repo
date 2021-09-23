@@ -23,6 +23,8 @@ print(remaining_50_list)
 remaining_50_list.append("Anywhere But Here")
 print(remaining_50_list)
 
+print()
+
 
 # TODO: Let's make sure "remaining_50_list" has exactly 50 movie titles
 print(len(remaining_50_list))

@@ -30,7 +30,7 @@ restaurant = {
     "transactions": ["pickup", "delivery"]
 }
 
-print(restaurant["latitude":], restaurant["longitude":], [restaurant["address1":], [restaurant["state:"],restaurant["zip"] )
+
 
 # TODO: Write code to print the latitude and longitude of Four Barrel Coffee.
 # TODO: Write code to print the complete address of the Four Barrel Coffee, formatted as a string - it should include the address, city, state and the zip code.

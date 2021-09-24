@@ -14,7 +14,7 @@ print("Challenge 2.3: Store the number of three point shot attempts in variables
 # TODO: Create variable here for number of 3 pt shot attempts by Jamal Murray
 # TODO: Create variable here for number of 3 pt shot attempts by Fred VanVleet
 # TODO: Create variable here for number of 3 pt shot attempts by James Harden
-jamal_shot_attempts = (46/3) == 
+
 print()
 
 # print("Challenge 2.4: Build on your print statement")

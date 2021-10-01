@@ -5,13 +5,18 @@ books = ['MY OWN WORDS', 'WHITE FRAGILITY', 'THE BODY KEEPS THE SCORE', 'SO YOU 
 
 # 1.0
 # What data type is the object 'books'? How do you know?
+print(type(books))
 
 
 # 1.1
 # Create a function 'available_books' to print the books list
 # Parameters: Not needed for this function
 # Return: Not needed for this function
-
+def available_books(data):
+    print(type(books))
+    for book in books:
+print(data)
+available_books(books):
 # 1.2
 # Run the 'available_books' function
 

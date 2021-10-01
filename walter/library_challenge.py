@@ -15,8 +15,8 @@ print(type(books))
 def available_books(data):
     print(type(books))
     for book in books:
-print(data)
-available_books(books):
+        print(data)
+available_books(books)
 # 1.2
 # Run the 'available_books' function
 

@@ -1,3 +1,5 @@
+
+
 # def HeyYou(Wal):
 #     print(f'Hey You!{Wal}')
 #     # print("my man!")
@@ -67,6 +69,5 @@
 # Date = (input("What is today's Date"))
 
 import numpy
-
-# numbers = [12,13,14]
-# print(mean(numbers)) 
+numbers = [12,13,14]
+print(numpy.mean(numbers)) 

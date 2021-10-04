@@ -22,18 +22,29 @@ print(input("Hi there. What is your name? "))
 name = input
 savings = input
 
-print(input(name("How much money is currently in your savings? ")))
-
-stock = input 
+print(input(name("How much money is currently in your {savings}? ")))
 
 print(input("Which stock are you interested in? Type 'amzn' for Amazon, 'aapl' for Apple, 'fb' for Facebook, 'goog' for Google and 'msft' for Microsoft."))
 
-print()
+stock = input 
+print(stock)
 
 print("Challenge 3.2.2: Perform user-specific calculations")
 # TODO: You have all 3 user inputs stores in variables. Based on that, write conditional (if-elif-else) statements to find out the number of stocks of the company that can be purchased with the savings amount.
 
-# '''
+if stock == amazon:
+    if savings < amazon:
+    
+        print((f"""You can buy {savings/amazon} shares."""))
+    elif stock > savings:
+        print("Stock is greater that savings")    
+    else:
+        print("You cannot buy this stock")
+    
+#     else:
+#     savings <= amazon
+# print(input("You can purchase {} shares of stock."))
+    
 # Your code should look like this:
 # if stock == "amzn":
     

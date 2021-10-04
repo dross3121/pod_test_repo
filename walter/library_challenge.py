@@ -4,26 +4,40 @@ books = ['MY OWN WORDS', 'WHITE FRAGILITY', 'THE BODY KEEPS THE SCORE', 'SO YOU 
          'THE WARMTH OF OTHER SUNS', 'THE COLOR OF LAW', 'THE NEW JIM CROW', 'THE TRUTHS WE HOLD', 'SAPIENS', 'BRAIDING SWEETGRASS', "MY GRANDMOTHER'S HANDS", 'ON TYRANNY']
 
 # 1.0
-# What data type is the object 'books'? How do you know?
-print(type(books))
+# # What data type is the object 'books'? How do you know?
+# print(type(books))
 
 
-# 1.1
-# Create a function 'available_books' to print the books list
-# Parameters: Not needed for this function
-# Return: Not needed for this function
-def available_books(data):
-    print(type(books))
-    for book in books:
-        print(data)
-available_books(books)
-# 1.2
-# Run the 'available_books' function
+# # 1.1
+# # Create a function 'available_books' to print the books list
+# # Parameters: Not needed for this function
+# # Return: Not needed for this function
+# def available_books(books):
+#     print(type(books))
+#     for book in books:
+#         print(books)
+# # available_books(books)
+# # 1.2
+# # Run the 'available_books' function
+
+# available_books(books)
+
+
 
 # 1.3
 # Create a function 'check_out' that removes a book from the books list
 # Parameters: book (string)
 # Return: Not needed for this function
+
+def check_out(book):
+    for book in books:
+        books.remove('SAPIENS')
+        print(books)
+
+check_out(books)
+
+
+
 
 # 1.4
 # Check out 'SAPIENS' using the check_out function

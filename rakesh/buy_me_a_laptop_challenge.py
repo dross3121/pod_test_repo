@@ -3,11 +3,10 @@ print("Challenge 1: All possible laptops\n")
 
 print("Question 1: You are given a list containing the laptop names. Print the names of each the laptops separately.")
 all_laptops = ["Apple MacBook Pro", "Asus Zenbook", "Dell XPS", "Lenovo IdeaPad", "Apple MacBook Air", "Sony Viao"]
-
-
 # TODO: Write code to print all laptop names
-print(f"All laptops names: "+", ".join(all_laptops))
-
+print("All laptops names:")
+print(f"{all_laptops[0]},\n{all_laptops[1]},\n{all_laptops[2]},\n{all_laptops[3]},\n{all_laptops[4]},\n{all_laptops[5]}")
+print()
 
 # Challenge 2
 
@@ -72,42 +71,53 @@ laptops = [
             "description": "The Dell XPS is an absolutely brilliant laptop. The 2020  version rocks an 11th-generation Intel Core i3, i5 or i7 processor and a bezel-less ‘Infinity Edge’ display. This Dell XPS continues to be the most popular Windows laptop in the world. What’s more, there’s a wide range of customization options, so you can really make the Dell XPS the best laptop for your needs. "
         }
 ]
-
+print()
 # TODO: Write code to print out the MacBook Pro url 
-print(laptops[0]["url"])
+print("1. ",laptops[0]['url'])
+print()
 # TODO: Write code to print all possible prices of the 16-inch MacBook Pro.
-print(laptops[0]["types"][1]["price"])
+print("2. ",laptops[0]['types'][1]['price'])
+print()
 # TODO: Write code to print all the color options for Dell XPS 13.
-print(laptops[1]["types"][0]["colors"])
+print("3. ",laptops[1]['types'][0]['colors'])
+print()
 # TODO: Write code to print the description of Dell XPS laptop.
-print(laptops[1]["description"])
+print("4. ",laptops[1]['description'])
+print()
 
 print("Question 2: Out of Stock laptops")
-print("Suppose that the 13-inch MacBook Pro in space gray color is sold out. Also, the same laptop with 1 TB storage is out of stock as well. Update the list of dictionaries such that these options are removed. Print the updated dictionary.")
-print()
-print()
-print()
-print()
+print("Suppose that the 13-inch MacBook Pro in space gray color is sold out.\
+Also, the same laptop with 1 TB storage is out of stock as well.\
+Update the list of dictionaries such that these options are removed. \
+Print the updated dictionary.")
+# There is ambiguity in the directions above.
+# There is no 13-inch MacBook Pro that has 1 TB storage.
+# The 16-inch 1 TB storage MacBook Pro will be removed because a 13-inch 1 TB MacBook Pro doesn't exist.
 
 # TODO: Update the laptops dictionary.
-laptops.append({"hp" : 1034})
-
 # TODO: Print the new dictionary.
-print(laptops)
+# 13-inch MacBook Pro space gray color removed and 13-inch MacBook Pro dictionary printed.
+print()
+laptops[0]['types'][0]['colors'].remove('space gray')
+print('Updated 13-inch MacBook Pro dictionary:')
+print(laptops[0]['types'][0])
+
+print()
+# 16-inch MacBook pro 1 TB removed and 16-inch MacBook Pro dictionary printed.
+laptops[0]['types'][1]['storage'].remove('1 TB SSD')
+print('Updated 16-inch MacBook Pro dictionary:')
+print(laptops[0]['types'][1])
+print()
+
+
 print("Question 3: listing all the prices")
-print("Time to look at the range of prices. Using a nested loops, print out all possible computer prices")
-print()
-print()
-print()
-print()
+print("Time to look at the range of prices. Print out all possible computer prices")
+
 # TODO: print out all possible prices for the laptops
-print(laptops[0]["types"][0]["price"])
-print(laptops[1]["types"][0]["price"])
-print(laptops[0]["types"][1]["price"])
-print(laptops[1]["types"][1]["price"])
-
-
-# for x in laptops:
-#     print([x]["types"][0]["price"])
-for x in laptops:
-    print([x]["types"][0]["price"])
+print()
+print("The prices for MacBook Pros are (in dollars):,")
+print(laptops[0]['types'][0]['price'],"and",laptops[0]['types'][1]['price'])
+print()
+print("The prices for Dell XPSs are (in dollars):")
+print(laptops[1]['types'][0]['price'],"and",laptops[1]['types'][1]['price'])
+print()

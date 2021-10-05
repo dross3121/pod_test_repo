@@ -35,4 +35,3 @@ print(f'Your total with tax and tip is ${total}.')
 print(f'Each person will pay ${individual}.')
 # Print a message for user using f string and print function.
 print(f'{name}, I hope that you enjoyed your meal and had a great time. Hoping the ${individual} was worth it! :)')
-

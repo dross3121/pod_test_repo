@@ -1,4 +1,4 @@
-# The formula for converting between fahrenheit and celsius is to first subtract 32, then multiply by 5/9. Can you do the following in python?
+ # The formula for converting between fahrenheit and celsius is to first subtract 32, then multiply by 5/9. Can you do the following in python?
 # Convert a temperature of 100 degrees fahrenheit to celsius
 # Save this to a variable called celsius_100, and use print() to print out the value
 # Is the resulting temperature you get an integer or float? How do you know?

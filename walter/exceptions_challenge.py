@@ -3,10 +3,9 @@ print('Question 1')
 a = 1
 b = 2
 if a < b:
-print(f'{a} is less than {b}')
+    print(f'{a} is less than {b}')
 else:
-print(f'{a} is greater than {b}')
-
+    print(f'{a} is greater than {b}')
 print('')
 
 print('Question 2')
@@ -17,9 +16,9 @@ cheeses = ['cheddar', 'swiss', 'pepper jack', 'provolone']
 
 sandwiches = []
 
-for meat in meats
+for meat in meats:
     for cheese in cheeses:
-        sandwiches.append(f'{meet} & {cheese}')
+        sandwiches.append(f'{meat} & {cheese}')
 
 print(sandwiches)
 
@@ -36,7 +35,7 @@ def repeat(str, times):
 print(repeat('python', 3))
 print(repeat('[]', 3))
 print(repeat('//', 3))
-print(repeat({}, 5))
+print(repeat('{}', 5))
 print(repeat('{[', 3))
 
 print('')
@@ -46,11 +45,11 @@ print('Question 4')
 
 fruits = ['apples', 'oranges', 'bananas', 'tomatoes', 'cherries']
 
+print(fruits[0])
 print(fruits[1])
 print(fruits[2])
 print(fruits[3])
 print(fruits[4])
-print(fruits[5])
 
 
 print('')
@@ -63,8 +62,13 @@ num = input("Enter a number to compute it's square value: ")
 # TODO: Rewrite line 65 with try/except blocks to handle all exceptions. If an exception exists, print 'Something Went Wrong!'
 # TODO: Bonus: Add a finally block to print 'The End'
 print(int(num) * int(num))
-
-
+try:
+    print(int(num) * int(num))
+except:
+    print("Something went wrong")
+finally:
+    print("The End")
+    
 print('Question 6')
 
 # TODO: Change the code here so that the 'NameError' exception block runs.

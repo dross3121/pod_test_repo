@@ -25,8 +25,8 @@ This function should have one parameter called 'playlist'
 The function should return an integer value indicating how many songs there are
 '''
 def get_playlist_length(playlist):
-	for i in (my_playlist):
-		return(len(my_playlist))
+	(my_playlist) => 0:
+	print(int(my_playlist))
 
 
 

@@ -36,7 +36,7 @@ print()
 display_playlist(my_playlist)
 # 5 Add 2 more songs to my_playlist, then display it again using the display_playlist() function
 print('Question 5')
-add_song(my_playlist {'artist': 'Chic', 'title': 'Le Freak'}, {'artist': 'Sister Sledge', 
+add_song(my_playlist, {'artist': 'Chic', 'title': 'Le Freak'}, {'artist': 'Sister Sledge', 
 'title': "He's The Greatest Dancer"})
 
 
@@ -44,6 +44,7 @@ add_song(my_playlist {'artist': 'Chic', 'title': 'Le Freak'}, {'artist': 'Sister
 # See playlist_functions.py for details on how to define this function
 # THEN, call that function in this script to get the length of my_playlist
 print('Question 6')
+import get_playlist_length()
 
 
 # 7 At the top of this script, import numpy using the usual alias

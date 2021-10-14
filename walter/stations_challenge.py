@@ -27,6 +27,13 @@ class Station:
     def show_info(self):
         print(f'{self.station_name} station is located at {self.location}')
 
+class subwaystation(Station):
+    def __init__(self, station_name, location, lines):
+        Station.__init__(self, station_name, location)
+        self.lines = lines
+    def show_info(self):
+        print(f"{self.station_name}) station is located at {self.location} and stops at lines {self.lines}. ")
+
 
 
 print('Question 2: Make an example subway station')

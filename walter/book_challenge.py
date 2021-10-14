@@ -22,8 +22,6 @@ Then, create an object of class Booklist called 'my_library' in this script.
 Finally, print the books attribute of my_library -- it should be an empty list
 Also, print out the type of my_library to see what you get :) 
 '''
-print('PART 1\n')
-
 
 '''
 Part #2: 
@@ -41,7 +39,8 @@ My Grandmother's Hands - Resmaa Menakem
 Finally, prinb the books attribute of my_library to make sure your books have been added!
 '''
 print('\nPart 2\n')
-
+my_library.add(title = 'Just Mercy', author = 'Bryan Stevenson')
+print(my_library.books)
 
 
 '''
@@ -52,9 +51,11 @@ Define the count_books() method to get the number of books in an object of class
 
 Once you have finished the method, count the books in my_library and print out the result
 '''
+
+
 print('\nPart 3\n')
-
-
+# Define the count of books
+print(my_library.count_books())
 
 '''
 Part #4: 

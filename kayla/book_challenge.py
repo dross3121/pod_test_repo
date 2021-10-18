@@ -11,6 +11,7 @@ This class and the methods are already imported in this script -- test them here
 '''
 
 # import the Booklist class and corresponding methods
+import numpy as np
 from book_class import *
 
 
@@ -26,9 +27,14 @@ Also, print out the type of my_library to see what you get :)
 '''
 
 my_library = Booklist()
-print(my_library)
-class Booklist():
-   print('PART 1\n')
+print(my_library.books)
+
+   
+
+
+
+
+
 '''
 Part #2: 
 Define the add() method to add a book to an object of class Booklist
@@ -44,24 +50,26 @@ My Grandmother's Hands - Resmaa Menakem
 
 Finally, print the books attribute of my_library to make sure your books have been added!
 '''
-print('\nPart 2\n')
 
-my_library.add("Just Mercy", "Bryan Stevenson")
-my_library.add("The New Jim Crow", "Michelle Alexander")
-my_library.add("The Truths We Hold", "Kamala Harris")
-my_library.add("My Grandmother's Hands", "Resmaa Menakem")
-
-'''
-Part #3: 
-Define the count_books() method to get the number of books in an object of class Booklist
--the method only needs the self parameter
--the method should return an integer that is the length of the list stored in the books attribute
-
-Once you have finished the method, count the books in my_library and print out the result
-'''
-print('\nPart 3\n')
+my_library.add("Bryan Stevenson","Just Mercy")
+my_library.add("Michelle Alexander","The New Jim Crow")
+my_library.add("Kamala Harris","The Truths We Hold")
+my_library.add("Resmaa Menakem","My Grandmother's Hands")
+print(my_library.books)
 
 
+
+
+# Part #3: 
+# Define the count_books() method to get the number of books in an object of class Booklist
+# -the method only needs the self parameter
+# -the method should return an integer that is the length of the list stored in the books attribute
+
+# Once you have finished the method, count the books in my_library and print out the result
+# '''
+# print('\nPart 3\n')
+
+my_library.count_books()
 
 '''
 Part #4: 
@@ -73,8 +81,8 @@ Define the remove_title() method which will remove a book by its title from an o
 Once you have finished the method, remove 'Just Mercy' from my_library
 Then, print out the books attribute to make sure that book is gone
 '''
+my_library.remove_title("Just Mercy")
 
-print('\nPart 4\n')
 
 
 '''
@@ -86,19 +94,11 @@ You can find NYT books here: https://www.nytimes.com/books/best-sellers/
 Then, print out the books attribute of nyt_bestsellers
 '''
 
-print('\nPart 5\n')
+
+nyc_bestsellers = Booklist()
+nyc_bestsellers.add("Amor Towles", "The Lincoln Highway")
+nyc_bestsellers.add("The Wish", "NIcholas Sparks")
+print(nyc_bestsellers.books)
 
 
 
-'''
-BONUS Part #6:
-Define a display_titles() method to display all the titles of the books in an object of class Booklist
-The titles should be displayed in alphabetical order!
--The method requires no parameters other than self
-
-HINT: there's a quick way to sort a list in alphabetical order
-
-Once you have completed this method, test it out on both my_library and nyt_bestsellers
-'''
-
-print('\nBONUS Part 6\n')

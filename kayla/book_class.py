@@ -18,16 +18,7 @@ class Booklist():
 				self.books.remove(book)
 				print(self.books)
 		
-	# 	for book in books_with_details:
-    # if book['author'] == author:
-    #   authors_books.append(book['title'])
-		
 	
-	
-	# def display_titles(self, author, title, books):
-	# 	pass
-
-# print(Booklist.books)
  
 
 

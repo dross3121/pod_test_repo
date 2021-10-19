@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+.verd{
+    font-family: Verdana;
+}
+.black{
+    color: blue;
+}
+#green{
+    color: green;
+}
+#red{
+    color: red;
+}
+#orange{
+    color:orange;
+    font-style: italic;
+}
+label{
+    font-weight: bold;
+}

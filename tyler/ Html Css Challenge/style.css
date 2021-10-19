@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+}
+
+.class {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.class2 {
+    color:crimson;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+#blue {
+    color: blue;
+    font-style: italic;
+}
+
+#green {
+    color: green;
+}
+
+#yellow {
+    color: yellow;
+}

@@ -1,0 +1,15 @@
+h1 {
+    text-align:center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: pink;
+}
+ol {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li {
+    color:purple;
+    font-style: italic;
+}

@@ -1,0 +1,17 @@
+h1 {text-align: center}
+
+.font {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+.red {color:red}
+
+#list1 {color:blue}
+#list2 {color:orangered; font-style: italic;}
+#list3 {color:lime}
+
+.bold {font-weight: bold}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%}

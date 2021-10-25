@@ -76,8 +76,8 @@ print('Question 6')
 name = 'Yusuf'
 
 try:
-    print(namecapitalize())
+    print(name  capitalize())
 except NameError:
     print('You got to run this exception block! Your challenge is completed!')
 except:
-    print('You should not be seeing this print statement. Try a different solution!')p
+    print('You should not be seeing this print statement. Try a different solution!')

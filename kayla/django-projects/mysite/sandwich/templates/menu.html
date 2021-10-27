@@ -1,0 +1,12 @@
+<h1>Menu</h1>
+<!-- {{arr}} -->
+
+<h3>Sandwich Options</h3>
+<ul>
+    {%for sammich in arr%}
+    <li>
+        <h3>Sandwich</h3><b>{{sammich}}</b>
+    </li>
+    {%endfor%}
+</ul>
+<form action="/sandwich/"><input type="submit" value="Home" />

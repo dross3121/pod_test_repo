@@ -18,5 +18,9 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('myapp/', include('myapp.urls')), # add this line of code
+    path('myapp/', include('myapp.urls')),
+    # add this line of code
+    #  URLS for sandwich_app
+    path('sandwich/', include('sandwich.urls')),
+    # path('random/', include('sandwich_generator.urls')),
 ]

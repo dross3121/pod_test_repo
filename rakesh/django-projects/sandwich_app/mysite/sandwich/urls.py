@@ -8,7 +8,7 @@ urlpatterns = [
     path('ingredients/<str:ingredient_type>',
          views.ingredients_list,
          name='ingredients_list'),
-    # sandwich/random
+    # Adding sandwich/random
     path('random', views.sandwich_generator, name='sandwich_generator'),
     # sandwich/menu
     path('menu', views.menu, name='menu')

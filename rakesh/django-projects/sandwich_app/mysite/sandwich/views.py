@@ -44,6 +44,7 @@ def sandwich_generator(request):
                       context={'sandwich': sandwich})
 
 
+# Question 4 All Possible Sandwich Generator
 def menu(request):
     if request.method == 'GET':
         sandwich = []

@@ -1,0 +1,16 @@
+<h1>Notes To Self</h1>
+<!--Lists the notes in decending order with newest note at the bottom-->
+<ol>
+    {% for note in notes %}
+    <li><a href="{ % url 'notes' note.note_id % }">{{ note.note_text }}</a></li>
+    {% endfor %}
+</ol>
+<!--Creates the form to enter notes-->
+<form action="{% url 'notes' %}" method="POST">
+    {% csrf_token %} {{ form }}
+    <input type="submit" name="create" value="Create" />
+</form>
+<!--Linking Notes Back to To Do App-->
+<form action="{% url 'todo' %}">
+    <input type="submit" value="Go Back To Your To Do List Page" />
+</form>

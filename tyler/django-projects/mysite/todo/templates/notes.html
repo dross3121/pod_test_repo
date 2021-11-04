@@ -1,0 +1,16 @@
+<h1>Notes To Self</h1>
+
+<form action="{% url 'note' %}" method = "POST">
+    {% csrf_token %} {{ form }}
+    <input type='submit' name='create' value ='Create'>
+</form>
+
+<ol>
+    {% for note in notes %}
+    <li>
+        {{ note.note_text }}
+    </li>
+    {% endfor %}
+</ol><br>
+
+<a href='http://127.0.0.1:8000/todo/'>Return</a>

@@ -1,0 +1,28 @@
+<h1>Tasks</h1>
+
+<h2>To Do:</h2>
+<ul>
+    {% for task in tasks %}
+    {% ifequal task.task_completed False %}
+    <li><a href="{% url 'task' task.task_id %}">{{ task.task }}</a></li>
+    {% endifequal %}
+    {% endfor %}
+</ul>
+<!--Complete feature added to To Do App-->
+<h2>Complete:</h2>
+{% for task in tasks %}
+{% ifequal task.task_completed True %}
+<ul>
+    <li><a href="{% url 'task' task.task_id %}">{{ task.task }}</a></li>
+</ul>
+{% endifequal %}
+{% endfor %}
+
+<form action="{% url 'todo' %}" method="POST">
+    {% csrf_token %} {{ form }}
+    <input type="submit" name="create" value="Create" />
+</form>
+<!--Linking To Do App with Notes-->
+<form action="{% url 'notes' %}">
+    <input type="submit" value="Go To Your Notes Page" />
+</form>

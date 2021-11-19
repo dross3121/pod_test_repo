@@ -24,7 +24,7 @@ def todo(request):
             Todo.objects.create(task=task)
         return HttpResponseRedirect(reverse('todo'))
 
-def task(request, task_id, completed = False):
+def task(request, task_id):
     if request.method == 'GET':
         # looking up specific todo object by primary key
         todo = Todo.objects.get(pk=task_id)

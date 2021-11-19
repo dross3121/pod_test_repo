@@ -20,5 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('myapp/', include('myapp.urls')),
     # urls for todo
-    path('todo/', include('todo.urls'))
+    path('todo/', include('todo.urls')),
+    path('sandwich/', include('sandwich.urls')),
+   
 ]
